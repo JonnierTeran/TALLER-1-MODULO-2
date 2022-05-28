@@ -13,15 +13,24 @@ d=7
 e=8
 f=1
 
-# Realizamos el procedimiento a 2 nuevas variables
-ecu1 = (a+(b/c))/(d+(e/f))
-Ecu2 = a-(b/(c-d))
+# Realizamos 2 funciones para las ecuaciones
+def ecuacion1():
+    return (a+(b/c))/(d+(e/f))
 
-# Reasignamos valores entre las variables
-Temp = ecu1
-ecu1 = Ecu2
-Ecu2 = Temp
+
+def ecuacion2():
+    return a-(b/(c-d))
+
+# Asignamos las Ecuaciones a 2 nuevas variables
+ecu1= ecuacion1()
+Ecu2= ecuacion2()
+
+print ("Ecuacion1: ",ecu1,"\nEcuacion2: ",Ecu2, "\n")
+
+
+# Reasignamos valores entre las variables (invertimos su valor)
+ecu1,Ecu2 =Ecu2,ecu1
 
 # Imprimimos por pantalla la Solucion Obtenida
-print(ecu1)
-print(Ecu2) 
+print("Nuevo Ecu1= ",ecu1)
+print("Nuevo Ecu2: ",Ecu2) 
