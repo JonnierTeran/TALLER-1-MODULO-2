@@ -18,8 +18,9 @@ ecu1 = (a+(b/c))/(d+(e/f))
 Ecu2 = a-(b/(c-d))
 
 # Reasignamos valores entre las variables
-Ecu2 = ecu1
+Temp = ecu1
 ecu1 = Ecu2
+Ecu2 = Temp
 
 # Imprimimos por pantalla la Solucion Obtenida
 print(ecu1)
