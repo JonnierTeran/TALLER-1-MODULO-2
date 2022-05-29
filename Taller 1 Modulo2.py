@@ -25,12 +25,13 @@ def ecuacion2():
 ecu1= ecuacion1()
 Ecu2= ecuacion2()
 
-print ("Ecuacion1: ",ecu1,"\nEcuacion2: ",Ecu2, "\n")
 
 
 # Reasignamos valores entre las variables (invertimos su valor)
 ecu1,Ecu2 =Ecu2,ecu1
 
 # Imprimimos por pantalla la Solucion Obtenida
-print("Nuevo Ecu1= ",ecu1)
-print("Nuevo Ecu2: ",Ecu2) 
+print("Resultados Luego de Reasignar variables ecu1 -> Ecu2 y Ecu2 -> ecu1")
+print("De la Expresion matematica a-(b/(c-d)) obtenemos Ecu1= ",ecu1)
+print("De la Expresion matematica (a+(b/c))/(d+(e/f)) Ecu2: ",Ecu2) 
+
